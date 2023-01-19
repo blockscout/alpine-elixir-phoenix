@@ -3,7 +3,7 @@
 VERSION ?= `cat VERSION | grep elixir | cut -d' ' -f2`
 MAJ_VERSION := $(shell echo $(VERSION) | sed 's/\([0-9][0-9]*\)\.\([0-9][0-9]*\)\(\.[0-9][0-9]*\)*/\1/')
 MIN_VERSION := $(shell echo $(VERSION) | sed 's/\([0-9][0-9]*\)\.\([0-9][0-9]*\)\(\.[0-9][0-9]*\)*/\1.\2/')
-IMAGE_NAME ?= bitwalker/alpine-elixir-phoenix
+IMAGE_NAME ?= blockscout/alpine-elixir-phoenix
 XDG_CACHE_HOME ?= /tmp
 BUILDX_CACHE_DIR ?= $(XDG_CACHE_HOME)/buildx
 

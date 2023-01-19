@@ -1,5 +1,5 @@
 ARG ELIXIR_VERSION
-FROM bitwalker/alpine-elixir:${ELIXIR_VERSION}
+FROM blockscout/alpine-elixir:${ELIXIR_VERSION}
 
 MAINTAINER Paul Schoenfelder <paulschoenfelder@gmail.com>
 
